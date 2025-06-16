@@ -1,0 +1,85 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chat Generator</title>
+  <script src="https://js.puter.com/v2/"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    #chat-container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      resize: vertical;
+      font-size: 16px;
+      min-height: 80px;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    #response {
+      margin-top: 20px;
+      background-color: #e0f7fa;
+      padding: 15px;
+      border-radius: 8px;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <div id="chat-container">
+    <h2>AI Blog Generator</h2>
+    <textarea id="userInput" placeholder="Tulis topik blog atau pertanyaan..."></textarea>
+    <button onclick="generate()">Generate</button>
+    <div id="response"></div>
+  </div>
+
+  <script>
+    function generate() {
+      const input = document.getElementById("userInput").value;
+      const responseDiv = document.getElementById("response");
+
+      if (!input.trim()) {
+        responseDiv.innerHTML = "<em>Masukkan pertanyaan atau topik terlebih dahulu.</em>";
+        return;
+      }
+
+      responseDiv.innerHTML = "<strong>Loading...</strong>";
+
+      puter.ai.chat(input)
+        .then(response => {
+          responseDiv.innerHTML = response;
+        })
+        .catch(err => {
+          responseDiv.innerHTML = "<span style='color:red;'>Gagal mendapatkan respon dari AI.</span>";
+          console.error(err);
+        });
+    }
+  </script>
+</body>
+</html> -->
